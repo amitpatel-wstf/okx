@@ -23,6 +23,8 @@ export async function API_GET_CALL() {
       }
     );
     console.log("response : ", request);
+    const result = await request.json()
+    console.log("Result : ", result);
   } catch (error) {
     console.log("error : ", error);
   }
